@@ -12,6 +12,7 @@
 		1D175A401DD0EE1700A19DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D175A3E1DD0EE1700A19DAF /* Main.storyboard */; };
 		1D175A421DD0EE1700A19DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D175A411DD0EE1700A19DAF /* Assets.xcassets */; };
 		1D175A451DD0EE1700A19DAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D175A431DD0EE1700A19DAF /* LaunchScreen.storyboard */; };
+		1D175A4D1DD11B0E00A19DAF /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D175A4C1DD11B0E00A19DAF /* MyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1D175A411DD0EE1700A19DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D175A441DD0EE1700A19DAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D175A461DD0EE1700A19DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D175A4C1DD11B0E00A19DAF /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				1D175A3A1DD0EE1700A19DAF /* AppDelegate.swift */,
 				1D175A3C1DD0EE1700A19DAF /* ViewController.swift */,
+				1D175A4C1DD11B0E00A19DAF /* MyViewController.swift */,
 				1D175A3E1DD0EE1700A19DAF /* Main.storyboard */,
 				1D175A411DD0EE1700A19DAF /* Assets.xcassets */,
 				1D175A431DD0EE1700A19DAF /* LaunchScreen.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					1D175A361DD0EE1700A19DAF = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3ERAPWRQPL;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D175A3D1DD0EE1700A19DAF /* ViewController.swift in Sources */,
+				1D175A4D1DD11B0E00A19DAF /* MyViewController.swift in Sources */,
 				1D175A3B1DD0EE1700A19DAF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,11 +263,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3ERAPWRQPL;
 				INFOPLIST_FILE = ShortyCuts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tobiasgozzi.ShortyCuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -270,11 +277,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3ERAPWRQPL;
 				INFOPLIST_FILE = ShortyCuts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tobiasgozzi.ShortyCuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let downloadedHookup = "Kim"
+        
+        if let shortcutItems = application.shortcutItems , shortcutItems.isEmpty {
+            let dynamicShortcuts = UIMutableApplicationShortcutItem(type: "Hookup", localizedTitle: "Hookup", localizedSubtitle: "Start a fling with \(downloadedHookup)", icon: UIApplicationShortcutIcon(templateImageName: "heart") , userInfo: nil)
+            
+            application.shortcutItems = [dynamicShortcuts]
+        }
+        
         return true
     }
 
@@ -39,6 +48,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        if let selVC = self.window?.rootViewController as? MyViewController{
+            if shortcutItem.type == "Search" {
+                selVC.list = "search"
+            } else if shortcutItem.type == "Hookup" {
+                selVC.list = "hookup"
+            }
+            
+        }
     }
 
 
